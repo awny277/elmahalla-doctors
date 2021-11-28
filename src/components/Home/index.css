@@ -1,0 +1,11 @@
+body{
+  background-color: var(--bs-gray-100);
+  padding: 0 !important;
+}
+.dataState{
+  background-color: var(--bs-white);
+  padding-top: 30px;
+}
+.Bgwhite {
+  background-color:var(--bs-white);
+}
