@@ -1,5 +1,6 @@
 .introduceCont {
-  padding: 25px 0;
+  padding: 25px 10px;
+  background-color: var(--bs-white);
 }
 .introduceCont .row {
   align-items: flex-start;
@@ -42,6 +43,7 @@
 }
 .imgCont {
   width: 90%;
+  margin: auto;
 }
 .imgCont img{
   width: 100%;
