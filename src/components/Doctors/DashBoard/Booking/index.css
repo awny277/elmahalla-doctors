@@ -65,14 +65,6 @@
     
 }
 
-
-
-
-
-
-
-
-
 .total-sections .img-section img {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -94,3 +86,31 @@
     font-size: 14px;
     color: #757575;
 } 
+
+/* start BookingContainer */
+.BookingContainer {
+    background-color: var(--bs-white);
+    padding: 20px;
+}
+.BookingContainer a{
+  color: var(--bs-black);
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.BookingContainer a:hover ,
+.BookingContainer a:focus 
+ {
+    color: var(--bs-white);
+    background-color: var(--bs-labany);
+}
