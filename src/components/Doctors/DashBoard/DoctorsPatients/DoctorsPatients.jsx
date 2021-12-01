@@ -54,7 +54,7 @@ const DoctorsPatients = () => {
             </div>
             <div className="d-flex justify-content-between">
               <h6>العمر</h6>
-              <span>{ele.Age} سنه</span>
+              <span>{ele.Age} </span>
             </div>
             <div className="d-flex justify-content-between">
               <h6>فصيلة الدم</h6>

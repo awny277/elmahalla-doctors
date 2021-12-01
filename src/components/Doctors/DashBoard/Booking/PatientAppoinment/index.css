@@ -1,1 +1,46 @@
-/*  */
+/* start upcoming section */
+
+.ordering-table{
+    display: flex;
+    gap: 80px;
+}
+
+.ordering-table li {
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.list-sections {
+    display: flex;
+    gap: 50px;
+}
+
+.list-sections .detail-section1 .img-sec  img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.detail-section1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.par-section { 
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* start today section */
+
+table td .img-sec img {
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
