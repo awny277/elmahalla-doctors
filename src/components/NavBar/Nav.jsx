@@ -25,7 +25,7 @@ function OffCanvasNav({ name, ...props }) {
         <Offcanvas.Body className="offcanvasBody">
           <Container>
             <div className="HomeActiveOffcan Heading ">
-              <NavLink to="/" className="HomeActiveNav">الرئيسية</NavLink>
+              <NavLink to="/home" className="HomeActiveNav">الرئيسية</NavLink>
             </div>
             <div className="Invoices Heading offcanvasHeader  ">
               <div onClick={() => NavClick()} data-cont=".one" className="offcanvasLinkName active">
@@ -162,7 +162,7 @@ const Nav = (props) => {
               <Row>
                 <Col >
                   <div className=" Heading">
-                    <h3 className="HomeActiveNav">الرئيسية</h3>
+                    <NavLink to="/home" className="HomeActiveNav">الرئيسية</NavLink>
                   </div>
                 </Col>
                 <Col >
