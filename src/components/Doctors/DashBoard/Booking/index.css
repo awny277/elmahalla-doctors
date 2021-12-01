@@ -1,0 +1,96 @@
+.total {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 23px;
+    background-color: white;
+}
+
+.total-sections {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+#total-sections0 ,#total-sections1 {
+    border-left: 1px solid #ddd;
+}
+
+.total-sections .img-section {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.total-sections .img-section::before {
+    content: "";
+    width: 100%;
+    border: 6px solid;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border-color: #ddd;
+
+}
+
+.total-sections .img-section::after {
+    content: "";
+    width: 100%;
+    border: 6px solid;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+
+}
+
+.total-sections #total0::after {
+    border-color: #e83e8c #e83e8c #e83e8c transparent;
+    
+}
+
+.total-sections #total1::after {
+    border-color: #20c997 #20c997 transparent transparent;
+    
+}
+
+.total-sections #total2::after {
+    border-color: #6610f2 transparent transparent transparent;
+    
+}
+
+
+
+
+
+
+
+
+
+.total-sections .img-section img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.total-sections .details h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.total-sections .details h3 {
+    font-size: 24px;
+    
+} 
+
+.total-sections .details p {
+    font-size: 14px;
+    color: #757575;
+} 
