@@ -1,0 +1,47 @@
+/* start DoctorsPatients */
+.DoctorsPatientsCont{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.DoctorsPatients {
+  background-color: var(--bs-white);
+  margin: 10px 0 ;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  flex-basis: 23%;
+}
+.imgCont {
+  width: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.imgCont img {
+  width: 100%;
+}
+.DoctorsPatients hr{
+  color: rgb(204, 204, 204);
+  height: 0.5px;
+}
+.DoctorsPatients p {
+  margin-bottom: 5px;
+  color: var(--bs-gray-700);
+}
+.DoctorsPatients h6 {
+  color: var(--bs-gray-700);
+  margin-bottom: 5px;
+}
+.DoctorsPatients span ,
+.DoctorsPatients i{
+  color: var(--bs-gray-600);
+}

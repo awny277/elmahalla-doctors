@@ -15,13 +15,13 @@ const DashSideBar = () => {
             <i className="fas fa-chart-line"></i>
             <NavLink to="/dashBoard/bookingDoctor">لوحة التحكم</NavLink>
           </li>
-          <li>
+          {/* <li>
             <i className="fas fa-calendar-check"></i>
             <NavLink to="/dashBoard/doctorsPatients">الحجز اليومي</NavLink>
-          </li>
+          </li> */}
           <li>
             <i className="fas fa-hospital-user"></i>
-            <NavLink to="/">المرضي</NavLink>
+            <NavLink to="/dashBoard/doctorsPatients">المرضي</NavLink>
           </li>
           <li>
             <i className="fas fa-clock"></i>
