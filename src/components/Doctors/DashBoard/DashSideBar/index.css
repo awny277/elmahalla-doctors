@@ -17,7 +17,56 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  outline: 10px solid #f7f7f7;
 }
 .DashSideBar .imgCont img {
   width: 100%;
+}
+.DashSideBar h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.DashSideBar p {
+  color: var(--bs-gray-600);
+}
+.DashSideBar ul {
+  list-style: none;
+  padding: 0;
+}
+.DashSideBar ul li {
+  border-top: 1px solid #eee;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.DashSideBar ul li i {
+  margin: 0;
+  padding: 0;
+  color: var(--bs-gray-600);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.DashSideBar ul li a {
+  color: var(--bs-gray-600);
+  text-decoration: none;
+  margin-right: 7px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.DashSideBar ul li:hover   {
+  padding-right: 15px;
+}
+.DashSideBar ul li:hover a ,
+.DashSideBar ul li:hover i {
+  color: var(--bs-labany);
 }
