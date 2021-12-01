@@ -10,15 +10,15 @@ const UpComing = () => {
 
       <div className="upcoming-table">
         <hr />
-      <ul className="ordering-table">
-        <li>patient name</li>
-        <li>appt date</li>
-        <li>type</li>
-        <li>paid amount</li>
-        <li></li>
-      </ul>
+        <ul className="ordering-table">
+          <li>patient name</li>
+          <li>appt date</li>
+          <li>type</li>
+          <li>paid amount</li>
+          <li></li>
+        </ul>
         {patient.map((ele, indx) => (
-          <div className="list-sections" key="indx">
+          <div className="list-sections" key={indx}>
             <div className="detail-section1">
               <div className="img-sec">
                 <img src={`/img/patients/${ele.imgUrl}`} alt="" />
@@ -39,17 +39,12 @@ const UpComing = () => {
               <h6>{ele.paid}</h6>
             </div>
             <div className="button-section5">
-            <NavLink to="/"><i class="far fa-eye"></i> view</NavLink>
-            <button className="acc-btn"><i class="fas fa-check"></i>accept</button>
-            <button className="rej-btn"><i class="fas fa-times"></i>cancel</button>
-            
+              <NavLink to="/"><i className="far fa-eye"></i> view</NavLink>
+              <button className="acc-btn"><i className="fas fa-check"></i>accept</button>
+              <button className="rej-btn"><i className="fas fa-times"></i>cancel</button>
             </div>
-            
           </div>
-         
-      
         ))}
-        
       </div>
     </React.Fragment>
   );
