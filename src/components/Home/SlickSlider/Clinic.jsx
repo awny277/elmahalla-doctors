@@ -70,7 +70,7 @@ class ClinicSlider extends React.Component {
       <React.Fragment>
         <Container className="text-center cont">
           <h2 className="slickHeader "> العيادات والتخصصات </h2>
-          <p className=" slickparg">يوجد لدينا جميع التخصصات والعيادات في المحلة الكبرى  <br /> dignissimos maiores minima cui impedit est sit veniam</p>
+          <p className=" slickparg">يوجد لدينا جميع التخصصات والعيادات في المحلة الكبرى </p>
           <Slider {...settings}>
             {this.state.Special.map((ele) => {
               return (

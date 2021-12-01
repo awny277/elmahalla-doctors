@@ -1,7 +1,6 @@
 import React from 'react';
 import ClinicSlider from './SlickSlider/Clinic';
 import BookSlider from './SlickSlider/BookSlider';
-import Footer from '../Footer/Footer';
 import './index.css';
 import IntroduceCont from './Quiestion/MedicalQuiestion';
 import Feature from './Quiestion/feature';
@@ -21,8 +20,6 @@ class Home extends React.Component {
         <IntroduceCont />
         {/* start Feature */}
         <Feature />
-        {/* Start Footer */}
-        <Footer />
       </React.Fragment>
     );
   }

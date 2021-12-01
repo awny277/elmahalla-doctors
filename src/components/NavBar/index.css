@@ -48,6 +48,10 @@
 .Heading h3 {
   font-size: 15px;
 }
+.HomeActiveNav
+{
+  color: var(--green);
+}
 .Heading:hover {
   color: var(--green) ;
 }
@@ -196,6 +200,8 @@
 .NavImage img {
   width: 100%;
 }
+/* start offcanButton */
+
 /* start OffCanImage */
 .OffCanImage {
   width: 80%;
@@ -216,6 +222,9 @@
   color: white;
 }
 /* start offcanvasbutton */
+.offcanButton:focus {
+  box-shadow: none !important;
+}
 .offcanvasbutton {
   list-style: none;
 }
@@ -226,17 +235,26 @@
   margin-bottom: 5px;
 }
 .offcanvasbutton li:nth-of-type(1){
-  width: 25px;
+  width: 30px;
 }
 .offcanvasbutton li:nth-of-type(2){
-  width: 19px;
+  width: 24px;
 }
 .offcanvasbutton li:nth-of-type(3){
-  width: 15px;
+  width: 18px;
 }
 /* start OffCanLinks */
 .offcanvasHeader {
   display: block;
+}
+.HomeActiveOffcan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomeActiveNav {
+  text-decoration: none;
+  font-size: 20px;
 }
 .offcanvasLinkName {
   display: flex;

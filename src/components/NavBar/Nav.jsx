@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Offcanvas, Row, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import "./index.css";
+// import { useParams } from 'react-router-dom'
 
 function OffCanvasNav({ name, ...props }) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button variant="" onClick={handleShow} >
+      <Button className="offcanButton" variant="" onClick={handleShow} >
         {name}
       </Button>
       <Offcanvas className="offcanvasContainer" show={show} onHide={handleClose} {...props}>
@@ -24,13 +24,16 @@ function OffCanvasNav({ name, ...props }) {
         </Offcanvas.Header>
         <Offcanvas.Body className="offcanvasBody">
           <Container>
+            <div className="HomeActiveOffcan Heading ">
+              <NavLink to="/" className="HomeActiveNav">الرئيسية</NavLink>
+            </div>
             <div className="Invoices Heading offcanvasHeader  ">
               <div onClick={() => NavClick()} data-cont=".one" className="offcanvasLinkName active">
-                <h3>العيادات</h3>
+                <h3>الدكاتره</h3>
                 <i className="fas fa-chevron-left"></i>
               </div>
               <div className=" OffCanLinks one">
-                <NavLink to="/">test</NavLink>
+                <NavLink to="/dashBoard">لوحة التحكم</NavLink>
                 <NavLink to="/">test</NavLink>
                 <NavLink to="/">test</NavLink>
                 <NavLink to="/">test</NavLink>
@@ -40,7 +43,7 @@ function OffCanvasNav({ name, ...props }) {
                 <NavLink to="/">test</NavLink>
               </div>
             </div>
-            <div className="Invoices Heading offcanvasHeader  ">
+            <div className=" Heading offcanvasHeader  ">
               <div onClick={() => NavClick()} data-cont=".two" className="offcanvasLinkName">
                 <h3>العيادات</h3>
                 <i className="fas fa-chevron-left"></i>
@@ -109,6 +112,7 @@ function Example() {
     </>
   );
 }
+
 const NavClick = () => {
   let offcanvasHeader = document.querySelectorAll(".offcanvasLinkName");
   let OffCanLinks = document.querySelectorAll(".OffCanLinks");
@@ -135,7 +139,12 @@ const NavClick = () => {
   });
 }
 
-const Nav = () => {
+const Nav = (props) => {
+  // const { id } = useParams()
+
+  // useEffect(() => {
+  //   console.log(id)
+  // }, [id])
   return (
     <React.Fragment>
       <Container fluid className=" NavBar Bgwhite ">
@@ -152,27 +161,16 @@ const Nav = () => {
             <Container className="paddingZero">
               <Row>
                 <Col >
-                  <div className="Invoices Heading">
-                    <h3>الرئيسية</h3>
-                    <i className="fas fa-chevron-left"></i>
-                    <div className="Links">
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                      <NavLink to="/">test</NavLink>
-                    </div>
+                  <div className=" Heading">
+                    <h3 className="HomeActiveNav">الرئيسية</h3>
                   </div>
                 </Col>
                 <Col >
-                  <div className="Invoices Heading">
+                  <div className=" Heading">
                     <h3>الدكاترة</h3>
                     <i className="fas fa-chevron-left"></i>
                     <div className="Links">
-                      <NavLink to="/">test</NavLink>
+                      <NavLink to="/dashBoard">لوحه التحكم</NavLink>
                       <NavLink to="/">test</NavLink>
                       <NavLink to="/">test</NavLink>
                       <NavLink to="/">test</NavLink>
@@ -184,7 +182,7 @@ const Nav = () => {
                   </div>
                 </Col>
                 <Col >
-                  <div className="Invoices Heading">
+                  <div className=" Heading">
                     <h3>المرضي</h3>
                     <i className="fas fa-chevron-left"></i>
                     <div className="Links">
@@ -200,7 +198,7 @@ const Nav = () => {
                   </div>
                 </Col>
                 <Col  >
-                  <div className="Invoices Heading">
+                  <div className=" Heading">
                     <h3>التقارير</h3>
                     <i className="fas fa-chevron-left"></i>
                     <div className="Links">
@@ -232,7 +230,7 @@ const Nav = () => {
                   </div>
                 </Col>
                 <Col  >
-                  <div className="Invoices Heading">
+                  <div className=" Heading">
                     <h3>التقارير</h3>
                     <i className="fas fa-chevron-left"></i>
                     <div className="Links">

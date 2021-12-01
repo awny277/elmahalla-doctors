@@ -79,7 +79,7 @@
   line-height: 1.6;
   color: var(--main-Parg);
   width: 95%;
-  margin: 15px auto 10px;
+  margin: 15px auto 15px;
 }
 .slick-slide img {
   margin: 0 auto;
@@ -127,6 +127,9 @@
   -o-transform: translate(-1%,-85%);
   outline: 10px solid white;
   box-shadow: 2px 2px 20px 15px rgb(0 0 0 / 10%);
+}
+.MainSlick {
+  cursor: pointer;
 }
 .MainSlick h3{
   margin-top: 20px;
@@ -199,7 +202,6 @@
 }
 .BookSlider .BookimgCont img {
   width: 100%;
-
   transition:  0.4s;
   -webkit-transition:  0.4s;
   -moz-transition:  0.4s;
