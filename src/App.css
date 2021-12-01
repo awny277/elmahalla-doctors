@@ -3,6 +3,7 @@
   text-transform: capitalize;
 }
 :root {
+  --bs-background: #155185;
   --main-Parg:#004f6c;
   --bs-labany2: #38b9db;
   --bs-labany:#0de0fe;

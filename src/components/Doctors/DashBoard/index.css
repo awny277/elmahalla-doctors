@@ -1,0 +1,14 @@
+/* start Dashpath */
+.Dashpath {
+  background-color: var(--bs-background);
+  color: var(--bs-white);
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.Dashpath h2 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.DashBoard .row {
+  justify-content: space-evenly;
+}

@@ -14,7 +14,7 @@ function App() {
       <main className="container-margin">
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/dashBoard" component={DashBoard} />
+          <Route path="/dashBoard/:id" component={DashBoard} />
           <Redirect to="/home" />
         </Switch>
       </main>

@@ -33,7 +33,7 @@ function OffCanvasNav({ name, ...props }) {
                 <i className="fas fa-chevron-left"></i>
               </div>
               <div className=" OffCanLinks one">
-                <NavLink to="/dashBoard">لوحة التحكم</NavLink>
+                <NavLink to="/dashBoard/bookingDoctor">لوحة التحكم</NavLink>
                 <NavLink to="/">test</NavLink>
                 <NavLink to="/">test</NavLink>
                 <NavLink to="/">test</NavLink>
@@ -170,7 +170,7 @@ const Nav = (props) => {
                     <h3>الدكاترة</h3>
                     <i className="fas fa-chevron-left"></i>
                     <div className="Links">
-                      <NavLink to="/dashBoard">لوحه التحكم</NavLink>
+                      <NavLink to="/dashBoard/bookingDoctor">لوحه التحكم</NavLink>
                       <NavLink to="/">test</NavLink>
                       <NavLink to="/">test</NavLink>
                       <NavLink to="/">test</NavLink>
