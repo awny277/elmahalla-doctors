@@ -48,10 +48,7 @@
 .Heading h3 {
   font-size: 15px;
 }
-.HomeActiveNav
-{
-  color: var(--green);
-}
+
 .Heading:hover {
   color: var(--green) ;
 }
@@ -255,9 +252,16 @@
 .HomeActiveNav {
   text-decoration: none;
   font-size: 20px;
+  margin-bottom: 5px;
+  color: var(--green);
 }
 .HomeActiveNav:hover {
   color: var(--green);
+}
+@media (max-width: 575.98px) { 
+  .HomeActiveNav {
+    margin-bottom: 0;
+  }
 }
 .offcanvasLinkName {
   display: flex;

@@ -6,9 +6,11 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  border: 1px solid #eee;
+  padding-top: 20px;
 }
 .DashSideBar .imgCont{
-  width: 60%;
+  width: 40%;
   overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
