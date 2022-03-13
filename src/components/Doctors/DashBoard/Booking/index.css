@@ -88,6 +88,9 @@
 } 
 
 /* start BookingContainer */
+.ToDay {
+    margin-top: 50px;
+}
 .BookingContainer {
     background-color: var(--bs-white);
     padding: 20px;
@@ -108,9 +111,18 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.BookingContainer a:hover ,
-.BookingContainer a:focus 
+.BookingContainer .BookingDoctorTabs {
+    color: var(--bs-white);
+    background-color: var(--bs-labany);
+    margin-bottom: 30px;
+}
+
+.BookingContainer .BookingDoctorTabs:hover ,
+.BookingContainer .BookingDoctorTabs:focus 
  {
     color: var(--bs-white);
     background-color: var(--bs-labany);
+}
+.booking-header {
+    margin: 20px;
 }

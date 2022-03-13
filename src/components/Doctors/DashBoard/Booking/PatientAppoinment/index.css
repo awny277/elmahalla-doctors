@@ -1,46 +1,49 @@
 /* start upcoming section */
 
-.ordering-table{
-    display: flex;
-    gap: 80px;
-}
-
-.ordering-table li {
-    list-style-type: none;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.list-sections {
-    display: flex;
-    gap: 50px;
-}
-
-.list-sections .detail-section1 .img-sec  img {
-    width: 50px;
-    border-radius: 50%;
-}
-
-.detail-section1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.par-section { 
-    display: flex;
-    flex-direction: column;
-}
-
-
 /* start today section */
+.ToDay table {
+    width: 100%;
+}
+.ToDay tr {
+    border-top: 1px solid #eee;
+}
+.ToDay td , 
+.ToDay th{
+    padding: 10px;
+}
+.NavToPatientProfile {
 
-table td .img-sec img {
-    width: 50px;
+}
+.NavToPatientProfile h4 {
+    width: 30%;
+    font-size: 22px;
+}
+.ToDayimgCont {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    overflow: hidden;
+}
+@media (min-width: 768px) { 
+    .ToDayimgCont {
+        width: 25%;
+    }
+}
+.ToDay td img {
+    width: 100%;
+}
+.view-btn {
+    color: white !important;
+}
+.Accept-btn {
+    margin: 5px;
+}
+
+.patient-info h4 {
+    font-size: 22px;
+}
+.patient-info span {
+    font-size: 16px;
 }

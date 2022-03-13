@@ -9,6 +9,11 @@
 .Footer .imgCont {
   width: 50%;
   margin-bottom: 15px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .FooterLogo p {
   color: var(--bs-white);
